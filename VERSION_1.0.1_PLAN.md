@@ -17,10 +17,10 @@ Version 1.0.1 will focus on incremental improvements based on initial user feedb
 **Scope Summary:**
 
 **1.0.1-core** (Must ship in 1.0.1):
-- Custom keyboard shortcuts
-- Screenshot preview before copy
-- Performance optimizations
-- Bug fixes from "Bug Fixes & Known Issues" section
+- Custom keyboard shortcuts - [Issue #1](https://github.com/cypherpunknakamoto/Snapside/issues/1)
+- Screenshot preview before copy - [Issue #2](https://github.com/cypherpunknakamoto/Snapside/issues/2)
+- Performance optimizations - [Issue #3](https://github.com/cypherpunknakamoto/Snapside/issues/3)
+- Bug fixes from "Bug Fixes & Known Issues" section - [Issue #4](https://github.com/cypherpunknakamoto/Snapside/issues/4)
 
 **later (1.1+)** (Stretch goals / future releases):
 - Button position memory
