@@ -14,6 +14,22 @@ Version 1.0.1 will focus on incremental improvements based on initial user feedb
 
 ## Planned Features & Improvements
 
+**Scope Summary:**
+
+**1.0.1-core** (Must ship in 1.0.1):
+- Custom keyboard shortcuts
+- Screenshot preview before copy
+- Performance optimizations
+- Bug fixes from "Bug Fixes & Known Issues" section
+
+**later (1.1+)** (Stretch goals / future releases):
+- Button position memory
+- Dark mode visual tweaks
+- Window title display
+- Multiple button styles
+- Sound effects toggle
+- Capture counter
+
 ### High Priority
 
 #### 1. Custom Keyboard Shortcuts
@@ -22,6 +38,7 @@ Version 1.0.1 will focus on incremental improvements based on initial user feedb
 - **Implementation:** Add settings panel for shortcut customization
 - **Estimated Effort:** Medium
 - **Priority:** High
+- **Scope:** 1.0.1-core
 
 #### 2. Screenshot Preview Before Copy
 - **Description:** Show a brief preview of the captured screenshot before auto-copying
@@ -29,6 +46,7 @@ Version 1.0.1 will focus on incremental improvements based on initial user feedb
 - **Implementation:** Display small preview window for 1-2 seconds with option to cancel
 - **Estimated Effort:** Medium
 - **Priority:** High
+- **Scope:** 1.0.1-core
 
 #### 3. Button Position Memory
 - **Description:** Remember the last position of the floating button across app restarts
@@ -36,6 +54,7 @@ Version 1.0.1 will focus on incremental improvements based on initial user feedb
 - **Implementation:** Store button coordinates in UserDefaults
 - **Estimated Effort:** Low
 - **Priority:** High
+- **Scope:** later (1.1+)
 
 ### Medium Priority
 
@@ -45,6 +64,7 @@ Version 1.0.1 will focus on incremental improvements based on initial user feedb
 - **Implementation:** Adjust button colors/opacity for better dark mode contrast
 - **Estimated Effort:** Low
 - **Priority:** Medium
+- **Scope:** later (1.1+)
 
 #### 5. Performance Optimizations
 - **Description:** Reduce memory footprint and improve screenshot capture speed
@@ -52,6 +72,7 @@ Version 1.0.1 will focus on incremental improvements based on initial user feedb
 - **Implementation:** Profile and optimize image processing pipeline
 - **Estimated Effort:** Medium
 - **Priority:** Medium
+- **Scope:** 1.0.1-core
 
 #### 6. Window Title Display
 - **Description:** Briefly show the captured window's title when screenshot is taken
@@ -59,6 +80,7 @@ Version 1.0.1 will focus on incremental improvements based on initial user feedb
 - **Implementation:** Show temporary overlay with window title
 - **Estimated Effort:** Low
 - **Priority:** Medium
+- **Scope:** later (1.1+)
 
 ### Low Priority / Nice to Have
 
@@ -68,6 +90,7 @@ Version 1.0.1 will focus on incremental improvements based on initial user feedb
 - **Implementation:** Add button style selector in settings
 - **Estimated Effort:** Low
 - **Priority:** Low
+- **Scope:** later (1.1+)
 
 #### 8. Sound Effects Toggle
 - **Description:** Optional audio feedback when screenshot is captured
@@ -75,6 +98,7 @@ Version 1.0.1 will focus on incremental improvements based on initial user feedb
 - **Implementation:** Add toggle in settings + system sound on capture
 - **Estimated Effort:** Low
 - **Priority:** Low
+- **Scope:** later (1.1+)
 
 #### 9. Capture Counter
 - **Description:** Show count of screenshots taken in current session
@@ -82,6 +106,7 @@ Version 1.0.1 will focus on incremental improvements based on initial user feedb
 - **Implementation:** Simple counter displayed in menu bar or settings
 - **Estimated Effort:** Low
 - **Priority:** Low
+- **Scope:** later (1.1+)
 
 ---
 
@@ -163,6 +188,46 @@ Version 1.0.1 will focus on incremental improvements based on initial user feedb
 2. Do we need a settings sync feature for users with multiple Macs?
 3. Should 1.0.1 include any Pro-only features?
 4. What's the minimum version gap before encouraging users to update?
+
+---
+
+
+## Pre-Release Checklist
+
+Before submitting 1.0.1 to the App Store, verify all core functionality still works:
+
+- [ ] Capture frontmost window still works with default shortcut (⌘⇧6)
+- [ ] Pro Monthly/Yearly paywall flow works, no pricing changes
+- [ ] Screen Recording permission dialog still appears / works as expected
+- [ ] App launches and quits with no new warnings in Console.app
+- [ ] OCR and redaction still behave as in 1.0
+- [ ] Custom keyboard shortcut (if implemented) works correctly
+- [ ] Preview window (if implemented) displays and cancels properly
+- [ ] No performance regressions compared to 1.0
+- [ ] All automated tests pass
+- [ ] Manual testing on macOS 13.0+ (Ventura and newer)
+
+---
+
+## What's New for 1.0.1
+
+_App Store release notes (copy-paste ready):_
+
+### New Features
+- **Customizable Keyboard Shortcuts**: Set your own keyboard shortcut for faster captures - no more conflicts with other apps
+- **Screenshot Preview**: Optional preview window before copying to clipboard, so you always know what you captured
+
+### Improvements
+- **Faster Performance**: Improved capture and OCR processing speed
+- **Better Reliability**: Fixed button disappearing on external display disconnect
+- **Enhanced Stability**: Optimized first screenshot capture time after app launch
+
+### Bug Fixes
+- Fixed issue where button occasionally disappeared when disconnecting external displays
+- Fixed settings window accessibility when button was hidden
+- Improved app launch performance
+
+_Version: 1.0.1 | Build: TBD | Release Date: TBD_
 
 ---
 
